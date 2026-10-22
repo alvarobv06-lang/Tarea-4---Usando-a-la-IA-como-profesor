@@ -1,25 +1,50 @@
-<?php
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+        <h2>Calculadora de Funciones</h2>
 
-//  la suma
-function sumar($a, $b) {
-    return $a + $b;
-}
+    <form method="POST" action="">
+  
+            <label class="form-label">Número 1:</label>
+            <input type="number" name="num1" class="form-control" step="any" required>
+       
+            <label class="form-label">Número 2:</label>
+            <input type="number" name="num2" class="form-control" step="any" required>
+     
+    <button type="submit" class="btn btn-primary">Calcular</button>
+</form>
 
-// la restar
-function restar($a, $b) {
-    return $a - $b;
-}
+    <?php include 'menu.php'; ?>
 
-// multiplicar
-function multiplicar($a, $b) {
-    return $a * $b;
-}
+        <h2>Ejercicio 3: Funciones</h2>
+        <hr>
 
-// La dividion
-function dividir($a, $b) {
-  return $a / $b;
-}
+        <?php
+        // Tus funciones originales (intactas)
+        function sumar($a, $b) {
+            return $a + $b;
+        }
 
+        function restar($a, $b) {
+            return $a - $b;
+        }
 
+        function multiplicar($a, $b) {
+            return $a * $b;
+        }
 
-?>
+        function dividir($a, $b) {
+
+        
+            return $a / $b;
+        }
+       ?>
+    
+
+</body>
+</html>
